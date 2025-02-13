@@ -13,7 +13,9 @@ h1 {
   border: solid 2px #00f5d4;
   box-shadow: 10px 10px 15px 5px #00f5d4;
   text-align: center;
-  margin: 20px 450px 20px 450px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
   background-color: #2a3439;
   padding-bottom: 50px;
 }
@@ -27,6 +29,9 @@ body {
   background: linear-gradient(135deg, #1e0f29, #00f5d4);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 button {

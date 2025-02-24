@@ -14,11 +14,22 @@
     <h1>Tiply</h1>
     <div class="box">
       <form>
-        <label for="name" class="form">Your Name(Optional):</label>
-        <input id="name" placeholder="Your Name" class="form" />
+        <label for="name">Your Name(Optional):</label>
+        <input id="name" placeholder="Your Name" />
         <br />
         <label class="form">Bill:</label>
         <input id="bill" class="form" placeholder="Bill" />
+        <label for="currency"
+          ><label for="currency">Select a currency:</label>
+          <select id="currency" name="currency">
+            <option value="usd">USD (United States Dollar)</option>
+            <option value="eur">EUR (Euro)</option>
+            <option value="gbp">GBP (British Pound)</option>
+            <option value="huf">HUF (Hungarian Forint)</option>
+            <option value="jpy">JPY (Japanese Yen)</option>
+            <option value="aud">AUD (Australian Dollar)</option>
+          </select></label
+        >
         <br />
         <button type="button" onclick="calcTip(0)" id="notip">00%</button>
         <button type="button" onclick="calcTip(0.05)" id="five">05%</button>

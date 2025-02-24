@@ -1,31 +1,13 @@
 h1 {
   text-align: center;
   margin-top: 125px;
-  text-decoration: underline;
+  text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 2px;
+  color: #ffffff;
 }
-
-.box {
-  color: white;
-  border: solid 2px #00f5d4;
-  box-shadow: 10px 10px 15px 5px #00f5d4;
-  text-align: center;
-  margin: 20px auto;
-  max-width: 600px;
-  width: 90%;
-  padding: 20px;
-  background-color: #2a3439;
-  padding-bottom: 50px;
-}
-
-label {
-  display: inline-block;
-  margin: 20px 0 20px 30px;
-}
-
 body {
   background: linear-gradient(135deg, #1e0f29, #00f5d4);
   background-repeat: no-repeat;
@@ -36,18 +18,35 @@ body {
   width: 100%;
 }
 
+.box {
+  color: white;
+  border: solid 2px #00f5d4;
+  box-shadow: 10px 10px 25px rgba(0, 245, 212, 0.3);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  background-color: #2a3439;
+  padding-bottom: 50px;
+}
+
 button {
   background-color: white;
   border-radius: 8px;
   color: black;
-  padding: 10px 10px 10px 10px;
+  padding: 12px 20px;
   margin-bottom: 30px;
   margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  border: 2px solid #00f5d4;
 }
+
 button:hover {
   background-color: #00ff7f;
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 255, 127, 0.4);
 }
 
 span {
@@ -58,4 +57,38 @@ span {
   padding: 30px;
   width: 80%;
   margin: 20px auto;
+}
+
+label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #00f5d4;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 2px solid #00f5d4;
+  background-color: #2a3439;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #00ff7f;
+  box-shadow: 0 0 8px rgba(0, 255, 127, 0.4);
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+  font-style: italic;
 }

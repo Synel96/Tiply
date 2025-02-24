@@ -26,7 +26,7 @@ function calcTip(percentage) {
 
   document.getElementById("name").value = "";
   document.getElementById("bill").value = "";
-  document.getElementById("currency").value = "";
+  
 }
 
 addEventListener("keydown", function (event) {
